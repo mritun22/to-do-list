@@ -1,0 +1,109 @@
+/* .task {} */
+/* .task-name {} */
+/* .complete-task-btn {} */
+
+/* .done-task {} */
+/* .discard-task-btn {} */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Jost", sans-serif;
+	font-size: initial;
+}
+
+body {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: start;
+
+	margin-top: 10px;
+	background: url("to-do-list.jpg") fixed center / cover no-repeat;
+}
+
+section {
+	min-width: 250px;
+	width: 400px;
+	padding: 10px;
+}
+
+section h3 {
+	font-size: 2.5rem;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+
+section div {
+	font-size: 1.3rem;
+}
+
+button {
+	width: 40px;
+	height: 40px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+
+
+#add-task-section {
+	display: flex;
+
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+#input-task {
+	flex-grow: 1;
+	width: 80%;
+	height: 40px;
+
+	margin-right: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.add-task-btn:hover {
+	background-color: rgb(5, 39, 36);
+}
+
+
+
+.task {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 10px;
+
+	background-color: rgba(214, 166, 7, 0.7);
+}
+
+.task-name {
+	flex-grow: 1;
+	width: 80%;
+	margin-right: 10px;
+	
+	line-height: 60px;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.complete-task-btn:hover {
+	background-color: rgb(8, 189, 77);
+}
+
+
+
+.done-task {
+	background-color: rgb(8, 189, 77);
+}
+
+.done-task-name {
+	text-decoration: 3px solid line-through;
+}
+
+.discard-task-btn:hover {
+	background-color: rgb(228, 33, 19);
+}

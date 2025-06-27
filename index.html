@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do List</title>
+	
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" href="to-do-list-icon.ico" type="image/vnd.microsoft.icon">
+
+	<link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body>
+	<section id="add-task-section">
+		<input type="text" name="input-task" id="input-task" placeholder="What task you got..." size="30">
+		<button type="button" class="add-task-btn">
+			<i class="fa-solid fa-plus"></i>
+		</button>
+	</section>
+
+	<section id="pending-task-section">
+		<h3>Tasks To Do</h3>
+
+		<div>There are currently no tasks pending</div>
+
+		<!-- <article class="task" id="task-1">
+			<h4 class="task-name"></h4>
+			<button type="button" class="complete-task-btn">
+				<i class="fa-solid fa-check"></i>
+			</button>
+		</article> -->
+	</section>
+
+	<section id="completed-task-section">
+		<h3>Tasks Completed</h3>
+
+		<div>There are currently no tasks completed</div>
+
+		<!-- <article class="task done-task" id="task-1">
+			<h4 class="task-name done-task-name"></h4>
+			<button type="button" class="discard-task-btn">
+				<i class="fa-solid fa-trash"></i>
+			</button>
+		</article> -->
+	</section>
+
+	<script src="./to_do_list.js"></script>
+</body>
+</html>
